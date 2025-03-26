@@ -7,7 +7,11 @@
 import styles from "./Cursor.module.scss";
 import { MutableRefObject, useEffect, useRef } from "react";
 import { gsap, Linear } from "gsap";
-import { IDesktop } from "../../app/page";
+
+interface IDesktop {
+  isDesktop: boolean;
+}
+
 
 const CURSOR_STYLES = {
   CURSOR: "fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50",

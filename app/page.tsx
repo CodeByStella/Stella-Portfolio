@@ -13,14 +13,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const DEBOUNCE_TIME = 100;
 
-export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
-export const NO_MOTION_PREFERENCE_QUERY =
-  "(prefers-reduced-motion: no-preference)";
-
-export interface IDesktop {
-  isDesktop: boolean;
-}
-
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -34,7 +26,7 @@ export default function Home() {
     if(timer)clearTimeout(timer);
     timer = setTimeout(() => {
       const isDesktopResult =
-        typeof window.orientation === "undefined" &&
+        typeof window.screen.orientation === "undefined" &&
         navigator.userAgent.indexOf("IEMobile") === -1;
 
       window.history.scrollRestoration = "manual";
