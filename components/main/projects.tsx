@@ -1,6 +1,5 @@
 import { ProjectCard } from "@/components/sub/project-card";
 import { PROJECTS } from "@/constants";
-import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 
 export const Projects = () => {
   return (
