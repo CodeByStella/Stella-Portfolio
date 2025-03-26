@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Dennis Lee | FullStact_dev portfolio",
-  description: "Welcome to my full stack Next.js 14 space portfolio.",
+  title: "Stella Ray | FullStact developer",
+  description: "Welcome to my portfolio.",
   keywords: [
     "reactjs",
     "nextjs",
@@ -35,7 +35,7 @@ export const siteConfig: Metadata = {
     "css",
   ] as Array<string>,
   authors: {
-    name: "Sanidhya Kumar Verma",
-    url: "https://github.com/sanidhyy",
+    name: "Stella Ray",
+    url: "https://github.com/CodeByStella",
   },
 } as const;

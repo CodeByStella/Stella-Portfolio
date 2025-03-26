@@ -23,7 +23,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en">
       <body
         className={cn(
-          "bg-[#030014] overflow-y-scroll overflow-x-hidden",
+          "bg-[#030014] overflow-y-scroll overflow-x-hidden cursor-none",
           inter.className
         )}
       >

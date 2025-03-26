@@ -15,8 +15,8 @@ const CURSOR_STYLES = {
 };
 
 const Cursor = ({ isDesktop }: IDesktop) => {
-  const cursor: MutableRefObject<HTMLDivElement> = useRef(null);
-  const follower: MutableRefObject<HTMLDivElement> = useRef(null);
+  const cursor: MutableRefObject<HTMLDivElement|null> = useRef(null);
+  const follower: MutableRefObject<HTMLDivElement|null> = useRef(null);
 
   const onHover = () => {
     gsap.to(cursor.current, {
@@ -56,8 +56,8 @@ const Cursor = ({ isDesktop }: IDesktop) => {
   };
 
   const initCursorAnimation = () => {
-    follower.current.classList.remove("hidden");
-    cursor.current.classList.remove("hidden");
+    follower.current?.classList.remove("hidden");
+    cursor.current?.classList.remove("hidden");
 
     document.addEventListener("mousemove", moveCircle);
 

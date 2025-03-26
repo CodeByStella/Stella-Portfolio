@@ -38,8 +38,12 @@ export const SkillDataProvider = ({
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
+      className=" w-28"
     >
-      <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <span className="w-full text-center justify-center flex whitespace-nowrap">{name}</span> 
+      <div className="flex items-center justify-center w-full h-20">
+        <img src={src.startsWith("https") ? src : `/skills/${src}`} width={width} /* height={height} */ alt={name} />
+      </div>
     </motion.div>
   );
 };

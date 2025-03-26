@@ -9,7 +9,7 @@ import type { Points as PointsType } from "three";
 export const StarBackground = (props: PointsProps) => {
   const ref = useRef<PointsType | null>(null);
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(5000), { radius: 1 })
   );
 
   useFrame((_state, delta) => {
@@ -31,7 +31,7 @@ export const StarBackground = (props: PointsProps) => {
         <PointMaterial
           transparent
           color="#fff"
-          size={0.002}
+          size={0.003}
           sizeAttenuation
           depthWrite={false}
         />

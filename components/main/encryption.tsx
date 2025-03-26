@@ -17,7 +17,7 @@ export const Encryption = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             &
           </span>{" "}
-          security.
+          security
         </motion.div>
       </div>
 
@@ -38,6 +38,12 @@ export const Encryption = () => {
             className="z-10"
           />
         </div>
+        <motion.p
+          variants={slideInFromTop}
+          className="text-lg text-wrap text-gray-200 my-5 max-w-[600px]"
+        >
+          Speed and security go hand in hand. I build high-performance applications optimized for speed, scalability, and seamless user experience, leveraging efficient code, caching, and CDN strategies. Security is a top priority—I implement encryption, secure authentication, and best practices to protect data, prevent vulnerabilities, and ensure system integrity.
+        </motion.p>
 
         <div className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042F88B] opacity-[0.9]">
           <h1 className="Welcome-text text-[12px]">Encryption</h1>

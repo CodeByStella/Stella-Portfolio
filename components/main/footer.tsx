@@ -10,21 +10,24 @@ export const Footer = () => {
           {FOOTER_DATA.map((column) => (
             <div
               key={column.title}
-              className="min-w-[200px] h-auto flex flex-col items-center justify-start"
+              className="w-full h-auto flex flex-col items-center justify-start"
             >
               <h3 className="font-bold text-[16px]">{column.title}</h3>
+              <div className="flex gap-16">
+
               {column.data.map(({ icon: Icon, name, link }) => (
                 <Link
-                  key={`${column.title}-${name}`}
-                  href={link}
+                key={`${column.title}-${name}`}
+                href={link}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="flex flex-row items-center my-[15px]"
-                >
+                  >
                   {Icon && <Icon />}
                   <span className="text-[15px] ml-[6px]">{name}</span>
                 </Link>
               ))}
+              </div>
             </div>
           ))}
         </div>
