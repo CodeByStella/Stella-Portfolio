@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Stella Ray | FullStact developer",
+  title: "Stella Ray | FullStack developer",
   description: "Welcome to my portfolio.",
   keywords: [
     "reactjs",
